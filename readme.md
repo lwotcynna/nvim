@@ -35,7 +35,7 @@ Just type `nvim` and you'll enter Neovim text editor.
 ### NOTE:
 - It will automatically install missing vim-plugins on startup.
 - You can manually install coc-plugins by typing `:CocInstall <coc-plugin>` inside vim session
-- For example if you want to install python completion, just type `:CocInstall coc-python`
+ > For example if you want to install python completion, just type `:CocInstall coc-python`
 - It is recommended to install `coc-marketplace` to easily install any other coc plugins
 ### Ingfo
 * got that fancy statusline from this [dotfiles](https://github.com/owl4ce/dotfiles) repo -- Thanks Mr. Harry!
