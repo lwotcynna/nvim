@@ -4,6 +4,7 @@ This is my own Neovim configuration on my Termux.<br>
 * Code Completion with [coc.nvim](https://github.com/neoclide/coc.nvim)
 * [Fuzzy Finder](https://github.com/junegunn/fzf) file explorer
 * [NERDTree](https://github.com/preservim/nerdtree) plugin
+* [Vim-Plug](https://github.com/junegunn/vim-plug) plugin manager 
 * Keybindings:
 
 |Key|Action|
