@@ -1,10 +1,8 @@
 " Highlight search dissapeared
-nnoremap <silent><esc> :noh<return><esc>
-
-" new line in insert mode
-imap <A-m> <esc>o
+nnoremap <silent><esc> :noh<cr><esc>
 
 " F keys
+" Display Termux F keys in ~/.termux/termux.properties > extra-keys
 " Quick write session with F2
 map <F2> :mksession! ~/.vim_session<cr>
 " And load session with F3
@@ -15,18 +13,7 @@ map <F7> gg=G<C-o><C-o>
 " Toggle auto change directory
 map <F8> :set autochdir! autochdir?<CR>
 
-" Toggle vertical line
-set colorcolumn=
-fun! ToggleCC()
-  if &cc == ''
-    " set cc=1,4,21
-    set cc=80
-  else
-    set cc=
-  endif
-endfun
-nnoremap <silent> <F9> :call ToggleCC()<CR>
-
+" Toggle display NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
 " Beginning and end of line
@@ -73,37 +60,6 @@ imap <M-k> <up>
 imap <M-l> <right>
 imap <M-f> <C-right>
 imap <M-b> <C-left>
-
-" Make ci( work like quotes do
-function! New_cib()
-    if search("(","bn") == line(".")
-        sil exe "normal! f)ci("
-        sil exe "normal! l"
-        startinsert
-    elsE
-        sil exe "normal! f(ci("
-        sil exe "normal! l"
-        startinsert
-    endif
-endfunction
-
-" And for curly brackets
-function! New_ciB()
-    if search("{","bn") == line(".")
-        sil exe "normal! f}ci{"
-        sil exe "normal! l"
-        startinsert
-    else
-        sil exe "normal! f{ci{"
-        sil exe "normal! l"
-        startinsert
-    endif
-endfunction
-
-nnoremap <silent>ci( :call New_cib()<CR>
-nnoremap <silent>cib :call New_cib()<CR>
-nnoremap <silent>ci{ :call New_ciB()<CR>
-nnoremap <silent>ciB :call New_ciB()<CR>
 
 " Alt-m for creating a new line in insert mode
 imap <M-m> <esc>o
