@@ -11,8 +11,8 @@ This is my own Neovim configuration on my Termux.<br>
 | `Ctrl-s` | Save |
 | `Ctrl-q` | Quit |
 | `Ctrl-n` | Nerdtree |
-| `Ctrl-C` | Copy |
-| `Ctrl-V` | Paste |
+| `Ctrl-c` | Copy |
+| `Ctrl-v` | Paste |
 | `jk` | back to NORMAL mode |
 
 For other keybinding and mapping, see `settings/maps.vim`
