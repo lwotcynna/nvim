@@ -18,7 +18,15 @@ Features:
 For other keybinding and mapping, see `settings/maps.vim`
 
 ## Installation
-You need to clone this repository and copy all the files inside to `~/.config/nvim`.<br>
+First, install Neovim on Termux
+```bash
+$ pkg install neovim -y
+```
+Install NodeJS (to make coc.nvim work)
+```bash
+$ pkg install nodejs
+```
+Then you need to clone this repository and copy all the files inside to `~/.config/nvim`.<br>
 Or you might wanna using this one liner:
 ```bash
 mkdir -p ~/.config && cd ~/.config && git clone https://github.com/annzc/nvim.git
