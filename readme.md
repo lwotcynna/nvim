@@ -2,16 +2,20 @@
 This is my own Neovim configuration on my Termux.<br>
 Features:
 * Code Completion with [coc.nvim](https://github.com/neoclide/coc.nvim)
-* [Fuzzy Finder] file explorer
-* [NERDTree] plugin
+* [Fuzzy Finder](https://github.com/junegunn/fzf) file explorer
+* [NERDTree](https://github.com/preservim/nerdtree) plugin
 * Keybindings:
-  | `Ctrl-s` | Save |
-  | `Ctrl-q` | Quit |
-  | `Ctrl-n` | Nerdtree |
-  | `Ctrl-C` | Copy |
-  | `Ctrl-V` | Paste |
-  | `jk` | back to NORMAL mode |
-For other keybindings and mappings, see `settings/maps.vim`
+
+|Key|Action|
+|--|--|
+| `Ctrl-s` | Save |
+| `Ctrl-q` | Quit |
+| `Ctrl-n` | Nerdtree |
+| `Ctrl-C` | Copy |
+| `Ctrl-V` | Paste |
+| `jk` | back to NORMAL mode |
+
+For other keybinding and mapping, see `settings/maps.vim`
 
 ## Installation
 You need to clone this repository and copy all the files inside to `~/.config/nvim`.<br>
