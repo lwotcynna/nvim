@@ -29,7 +29,7 @@ $ pkg install nodejs
 Then you need to clone this repository and copy all the files inside to `~/.config/nvim`.<br><br>
 Or you might wanna use this one liner:
 ```bash
-mkdir -p ~/.config && cd ~/.config && git clone https://github.com/annzc/nvim.git
+pkg install git -y && mkdir -p ~/.config && cd ~/.config && git clone https://github.com/annzc/nvim.git
 ```
 Just type `nvim` and you'll enter Neovim text editor.
 ### NOTE:
