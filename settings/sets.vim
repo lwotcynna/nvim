@@ -105,7 +105,7 @@ au BufReadPost *
          \ |   exe "normal! g`\""
          \ | endif
 
-source $HOME/.config/nvim/themes/statusline.vim
+source $HOME/.config/nvim/statusline.vim
 
 autocmd StdinReadPre * let s:std_in=1
 
