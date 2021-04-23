@@ -25,7 +25,7 @@ $ pkg install neovim -y
 ```
 Install NodeJS (to make coc.nvim work)
 ```bash
-$ pkg install nodejs
+$ pkg install nodejs -y
 ```
 Then you need to clone this repository and copy all the files inside to `~/.config/nvim`.<br><br>
 Or you might wanna use this one liner:
@@ -34,6 +34,7 @@ pkg install git -y && mkdir -p ~/.config && cd ~/.config && git clone https://gi
 ```
 Just type `nvim` and you'll enter Neovim text editor.
 ### NOTE:
+- in order to get the icon and rounded statusline support you need to copy `font.ttf` to `~/.termux` directory. Then run `termux-reload-settings` to apply.
 - It will automatically install missing vim-plugins on startup.
 - You can manually install coc-plugins by typing `:CocInstall <coc-plugin>` inside vim session
    > For example if you want to install python completion, just type `:CocInstall coc-python`
