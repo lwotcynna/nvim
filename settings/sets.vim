@@ -10,6 +10,12 @@ set softtabstop=4
 set shiftwidth=4
 set wrap
 
+" Make tilde of the end of buffer disappeared
+set fillchars=eob:\ 
+
+" Window pane separator
+set fillchars=vert:▎
+
 " Highlight the line on which the cursor lives.
 "set cursorline
 
@@ -94,10 +100,6 @@ if &t_Co == 8 && $TERM !~# '^linux\|^Eterm'
 endif
 
 set wildmenu
-
-" Colorscheme
-" colorscheme colors
-set fillchars=vert:▎
 
 " Restore last cursor position and marks on open
 au BufReadPost *
