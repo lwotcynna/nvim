@@ -22,11 +22,11 @@ For other keybinding and mapping, see `settings/maps.vim`
 First, install Neovim on Termux
 ```bash
 $ pkg install neovim -y
-$ npm install -g neovim
 ```
 Install NodeJS (to make coc.nvim work)
 ```bash
 $ pkg install nodejs -y
+$ npm install -g neovim
 ```
 Then you need to clone this repository and copy all the files inside to `~/.config/nvim`.<br><br>
 Or you might wanna use this one liner:
