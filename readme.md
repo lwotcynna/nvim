@@ -16,7 +16,7 @@ This is my own Neovim configuration on my Termux.<br>
 | `Ctrl-v` | Paste |
 | `jk` | back to NORMAL mode |
 
-For other keybinding and mapping, see `settings/maps.vim`
+For other keybindings and mappings, see `settings/maps.vim`
 
 ## Installation
 First, install Neovim on Termux
