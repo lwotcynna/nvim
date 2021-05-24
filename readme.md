@@ -1,10 +1,12 @@
 ## Neovim Simple Config
 This is my own Neovim configuration on my Termux.<br>
 ### Features:
-* Code Completion with [coc.nvim](https://github.com/neoclide/coc.nvim)
-* [Fuzzy Finder](https://github.com/junegunn/fzf) file explorer
-* [NERDTree](https://github.com/preservim/nerdtree) plugin
-* [Vim-Plug](https://github.com/junegunn/vim-plug) plugin manager 
+
+* Code Completion  : [coc.nvim](https://github.com/neoclide/coc.nvim)
+* File explorer    : [Fuzzy Finder](https://github.com/junegunn/fzf)
+* Folder file Tree : [NERDTree](https://github.com/preservim/nerdtree)
+* Plugin Manager   : [Vim-Plug](https://github.com/junegunn/vim-plug)
+* Statusline       : [lightline.vim](https://github.com/itchyny/lightline.vim)
 * Keybindings:
 
 |Key|Action|
@@ -16,29 +18,16 @@ This is my own Neovim configuration on my Termux.<br>
 | `Ctrl-v` | Paste |
 | `jk` | back to NORMAL mode |
 
-For other keybindings and mappings, see `settings/maps.vim`
+For other keybindings and mappings, see `general/maps.vim`
 
 ## Installation
-First, install Neovim on Termux
+Just clone this repo and copy all files inside into `~/.config/nvim`<br>
+Or you might wanna use this one line install command.
 ```bash
-$ pkg install neovim -y
-```
-Install NodeJS (to make coc.nvim work)
-```bash
-$ pkg install nodejs -y
-$ npm install -g neovim
-```
-Then you need to clone this repository and copy all the files inside to `~/.config/nvim`.<br><br>
-Or you might wanna use this one liner:
-```bash
-pkg install git -y && mkdir -p ~/.config && cd ~/.config && git clone https://github.com/annzc/nvim.git
+pkg install git -y && git clone https://github.com/annzc/nvim.git && cd nvim && bash install.sh
 ```
 Just type `nvim` and you'll enter Neovim text editor.
 ### NOTE:
-- in order to get the icon and rounded statusline support you need to copy `font.ttf` to `~/.termux` directory. Then run `termux-reload-settings` to apply.
-- It will automatically install missing vim-plugins on startup.
 - You can manually install coc-plugins by typing `:CocInstall <coc-plugin>` inside vim session
    > For example if you want to install python completion, just type `:CocInstall coc-python`
 - It is recommended to install `coc-marketplace` to easily install any other coc plugins
-### Ingfo
-* got that fancy statusline from this [dotfiles](https://github.com/owl4ce/dotfiles) repo -- Thanks Mr. Harry!

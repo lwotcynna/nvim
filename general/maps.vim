@@ -1,6 +1,3 @@
-" Highlight search dissapeared
-nnoremap <silent><esc> :noh<cr><esc>
-
 " F keys
 " Display Termux F keys in ~/.termux/termux.properties > extra-keys
 " Quick write session with F2
@@ -33,6 +30,7 @@ imap <C-S> <esc>:w<cr>
 nmap <C-Q> :q<cr>
 vmap <C-Q> <esc>:q<cr>
 imap <C-Q> <esc>:q<cr>
+" force exit
 
 " Control-C Copy in visual mode
 vmap <C-C> y
@@ -61,12 +59,8 @@ imap <M-l> <right>
 imap <M-f> <C-right>
 imap <M-b> <C-left>
 
-" Alt-m for creating a new line in insert mode
+" Alt-m for a new line underneath in insert mode
 imap <M-m> <esc>o
-
-" netrw configuration
-let g:netrw_browse_split = 0
-let g:netrw_altfile = 1
 
 " Cycle windows
 nmap <M-o> <C-W>w
@@ -80,16 +74,29 @@ cmap <M-n> <down>
 cmap <M-k> <up>
 cmap <M-j> <down>
 
+" Highlight search dissapeared
+nnoremap <silent><esc> :noh<cr><esc>
+
 " Back to normal mode from insert
 inoremap jk <esc>
 inoremap JK <esc>
 
-" Manually refresh file
-nmap <F5> :e!<cr>
-
 " quick edit init.vim
-"nnoremap <silent>,init :tabe ~/.config/nvim/nvim.vim<cr>
-"nnoremap <silent>,so :so ~/.config/nvim/nvim.vim<cr>:echo 'sourced'<cr>
+nnoremap <silent>,init :tabe ~/.config/nvim/init.vim<cr>
+nnoremap <silent>,so :so ~/.config/nvim/init.vim<cr>:echo 'sourced'<cr>
 
 " shortcut for creating shebang
-"inoremap ,shebg #!/data/data/com.termux/files/usr/bin/
+inoremap ,she #!/data/data/com.termux/files/usr/bin/
+
+"" buffers handling
+" show list of buffers
+nnoremap <space>b :buffers<cr>
+" switching; H for prev buffer, L for next buffer
+nnoremap <silent>H :bp<cr>
+nnoremap <silent>L :bn<cr>
+" delete buffer
+nnoremap <silent>X :bd<cr>
+
+" tab handling prev & next tab
+nnoremap zz gT
+nnoremap mm gt
