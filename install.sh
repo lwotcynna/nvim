@@ -101,14 +101,13 @@ function instal {
   pkg install neovim -y &>/dev/null
   stop_spinner $?
   start_spinner "~~ Installing NodeJS"
-  pkg install neovim -y &>/dev/null
+  pkg install nodejs -y &>/dev/null
   stop_spinner $?
   start_spinner "~~ Configuring Neovim"
   npm i -g neovim &>/dev/null
-  nvim=$HOME/nvim
+  nvim=$HOME/.config/nvim
   [ -d $nvim ] && mv $nvim $nvim.bak \
     && mkdir -p $nvim && cp -r * $nvim \
-    && nvim --headless +PlugInstall +q +q \
     || mkdir -p $nvim && cp -r * $nvim && sleep 3
   stop_spinner $?
   echo
